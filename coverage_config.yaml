@@ -8,6 +8,8 @@ mappings:
       - tests/test_gateway.py::test_refund_success
       - tests/test_gateway.py::test_refund_returns_refund_id
       - tests/test_gateway.py::test_ping_returns_true
+      - APEXDEMO-29
+      - APEXDEMO-30
 
   - module_pattern: "payments.processor*"
     test_ids:
@@ -33,3 +35,5 @@ mappings:
       - tests/test_retry.py::test_is_retryable_value_error_returns_false
       - tests/test_gateway.py::test_retry_on_failure
       - tests/test_gateway.py::test_retry_backoff_delay
+      - APEXDEMO-29
+      - APEXDEMO-30
