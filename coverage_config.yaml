@@ -1,39 +1,25 @@
 mappings:
+  - module_pattern: "payments.utils*"
+    test_ids:
+      - APEXDEMO-29
+      - APEXDEMO-31
+      - APEXDEMO-32
+      - APEXDEMO-33
+      - APEXDEMO-34
+
   - module_pattern: "payments.gateway*"
     test_ids:
-      - tests/test_gateway.py::test_charge_success
-      - tests/test_gateway.py::test_charge_returns_transaction_id
-      - tests/test_gateway.py::test_retry_on_failure
-      - tests/test_gateway.py::test_retry_backoff_delay
-      - tests/test_gateway.py::test_refund_success
-      - tests/test_gateway.py::test_refund_returns_refund_id
-      - tests/test_gateway.py::test_ping_returns_true
-      - APEXDEMO-29
       - APEXDEMO-30
+      - APEXDEMO-35
+      - APEXDEMO-36
+      - APEXDEMO-37
 
   - module_pattern: "payments.processor*"
     test_ids:
-      - tests/test_processor.py::test_process_valid_transaction
-      - tests/test_processor.py::test_process_negative_amount_raises
-      - tests/test_processor.py::test_process_missing_currency_raises
-      - tests/test_processor.py::test_refund_valid
-      - tests/test_processor.py::test_refund_negative_amount_raises
+      - APEXDEMO-38
+      - APEXDEMO-39
+      - APEXDEMO-40
 
   - module_pattern: "payments.models*"
     test_ids:
-      - tests/test_models.py::test_transaction_dataclass_fields
-      - tests/test_models.py::test_charge_result_default_error
-      - tests/test_models.py::test_refund_result_default_error
-      - tests/test_models.py::test_transaction_amount_stored
-
-  - module_pattern: "payments.utils*"
-    test_ids:
-      - tests/test_retry.py::test_retry_succeeds_on_first_try
-      - tests/test_retry.py::test_retry_exhausted_raises
-      - tests/test_retry.py::test_is_retryable_timeout
-      - tests/test_retry.py::test_is_retryable_connection_error
-      - tests/test_retry.py::test_is_retryable_value_error_returns_false
-      - tests/test_gateway.py::test_retry_on_failure
-      - tests/test_gateway.py::test_retry_backoff_delay
-      - APEXDEMO-29
-      - APEXDEMO-30
+      - APEXDEMO-35
